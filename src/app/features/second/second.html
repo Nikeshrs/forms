@@ -1,0 +1,55 @@
+<div class="full" [formGroup]="group">
+    <div class="upperbody">
+    <img src="/logo1.jpg">
+    <h2>On-site Inquiries</h2>
+    </div>
+    <div class="lowerbody">
+    <label>Name<span> *</span></label><br>
+    <input formControlName="name" class="allinput" type="text"><br><br>
+    <label><b>Where are you?</b><span> *</span></label><br>
+    <input formControlName="address1" class="allinput" type="text"><br>
+    <label>Street Address</label><br><br>
+    <input formControlName="address2" class="allinput" type="text"><br>
+    <label>Address Line 2</label><br><br>
+    <div class="flex">
+    <diV>
+        <input formControlName="city" id="one" type="text"><br>
+        <label>city</label><br><br>
+        <input formControlName="pincode" id="one" type="text"><br>
+        <label>Postel/Zip Code</label>
+    </diV>
+    <diV>
+        <input formControlName="state" id="one" type="text"><br>
+        <label>State/Region/Province</label><br><br>
+        <select formControlName="country">
+            <option value="INDIA">INDIA</option>
+            <option value="JAPAN">JAPAN</option>
+            <option value>CHINA</option>
+            <option value="RUSSIA">RUSSIA</option>
+            <option value="MEXICO">MEXICO</option>
+        </select><br>
+        <label>Country</label>
+    </diV>
+    </div>
+    <br>
+    <label>Whats the progress status?<span> *</span></label><br>
+    <input class="range" type="range"><br>
+    <br>
+    <label>Do you need anymore materials?<span> *</span></label><br>
+    <input formControlName="materials" value="Yes" type="radio"><label>Yes</label><br>
+    <input formControlName="materials" value="No" type="radio"><label>No</label><br><br>
+    <label>What more do you need?</label><br>
+    <input formControlName="Sand" type="checkbox"><label>Sand</label><br>
+    <input formControlName="Bricks" type="checkbox"><label>Bricks</label><br>
+    <input formControlName="Rods" type="checkbox"><label>Rods</label><br>
+    <input formControlName="Others" type="checkbox"><label>Others</label><br><br>
+    <label>Any more comments?</label><br>
+    <input formControlName="comments" class="comments" type="text"><br><br>
+    <button (click)="completed()" >Submit</button><br>
+    </div>
+   
+    
+
+</div>
+{{group.value|json}}
+<button (click)="url()"><a routerLink="/url">url</a></button>

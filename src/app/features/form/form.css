@@ -1,0 +1,37 @@
+section{
+    border: 1px solid black;
+    height: 700px;
+    width: 800px;
+}
+table{
+    border: 1px solid black;
+    padding: 50px;
+    margin: 200px 0px 0px 100px;
+    background-color: bisque;
+    
+}
+button{
+    width: 100px;
+    height: 30px;
+    
+    margin-left: 300px;
+}
+.full{
+    display: flex;
+}
+.content{
+    border: 1px solid black;
+    padding: 50px;
+    margin: 200px 0px 0px 100px;
+    background-color:aquamarine ;
+    
+}
+.one{
+    background-color: aquamarine;
+}
+.two{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+}

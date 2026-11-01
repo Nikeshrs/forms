@@ -1,0 +1,46 @@
+<div class="full">
+<section class="one">
+    <h1>Form</h1>
+    <table [formGroup]="gro">
+         <tbody>
+        <tr>
+            <td><label >Name:</label></td>
+            <td><input type="text" formControlName="name"></td>
+            
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" formControlName="email"></td>
+        </tr>
+        <tr>
+            <td><label>Phone Number:</label></td>
+            <td><input type="number" formControlName="phonenumber"></td>
+        </tr>
+        <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" formControlName="password"></td>
+        </tr>
+        <tr>
+            <td><label>Date Of Birth:</label></td>
+            <td><input type="date" formControlName="dob"></td>
+        </tr>
+        <tr>
+            <td ><label>Gender:</label></td>
+            <td><input type="radio" formControlName="gender"  value="Male"><label>Male</label><input type="radio" formControlName="gender" value="Female"><label>Female</label></td>
+        </tr>
+         <tr>
+            <td><label>Language:</label></td>
+            <td><input type="checkbox" formControlName="Tamil" ><label>Tamil</label><input type="checkbox" formControlName="English"><label>English</label><input type="checkbox" formControlName="Malayalam"><label>Malayalam</label><input type="checkbox" formControlName="Kanada"><label>Kanada</label></td>
+        </tr>
+         </tbody>
+    </table>
+    <button (click)="onSubmit()">Submit</button>
+</section>
+
+<section class="two">
+    <h1>JsonPipe</h1>
+    <div class="content">
+        {{gro.value|json}}
+    </div>
+</section>
+</div>
